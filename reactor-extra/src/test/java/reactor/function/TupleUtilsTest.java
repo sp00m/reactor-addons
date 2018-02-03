@@ -380,5 +380,47 @@ public final class TupleUtilsTest {
 
         assertThat(result).isTrue();
     }
+    
+    @Test
+    public void reverse2() {
+        assertThat(TupleUtils.reverse(Tuples.of(1, 2)))
+                .isEqualTo(Tuples.of(2, 1));
+    }
+
+    @Test
+    public void reverse3() {
+        assertThat(TupleUtils.reverse(Tuples.of(1, 2, 3)))
+                .isEqualTo(Tuples.of(3, 2, 1));
+    }
+
+    @Test
+    public void reverse4() {
+        assertThat(TupleUtils.reverse(Tuples.of(1, 2, 3, 4)))
+                .isEqualTo(Tuples.of(4, 3, 2, 1));
+    }
+
+    @Test
+    public void reverse5() {
+        assertThat(TupleUtils.reverse(Tuples.of(1, 2, 3, 4, 5)))
+                .isEqualTo(Tuples.of(5, 4, 3, 2, 1));
+    }
+
+    @Test
+    public void reverse6() {
+        assertThat(TupleUtils.reverse(Tuples.of(1, 2, 3, 4, 5, 6)))
+                .isEqualTo(Tuples.of(6, 5, 4, 3, 2, 1));
+    }
+
+    @Test
+    public void reverse7() {
+        assertThat(TupleUtils.reverse(Tuples.of(1, 2, 3, 4, 5, 6, 7)))
+                .isEqualTo(Tuples.of(7, 6, 5, 4, 3, 2, 1));
+    }
+
+    @Test
+    public void reverse8() {
+        assertThat(TupleUtils.reverse(Tuples.of(1, 2, 3, 4, 5, 6, 7, 8)))
+                .isEqualTo(Tuples.of(8, 7, 6, 5, 4, 3, 2, 1));
+    }
 
 }

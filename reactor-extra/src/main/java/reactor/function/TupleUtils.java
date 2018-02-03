@@ -347,4 +347,109 @@ public final class TupleUtils {
         return tuple -> predicate.test(tuple.getT1(), tuple.getT2(), tuple.getT3(), tuple.getT4(), tuple.getT5(), tuple.getT6(), tuple.getT7(), tuple.getT8());
     }
 
+    /**
+     * Reverses a {@link Tuple2}
+     * 
+     * @param tuple the tuple to reverse
+     * @param <T1>  the type of the first value
+     * @param <T2>  the type of the second value
+     * @return the reversed tuple
+     */
+    public static <T1, T2> Tuple2<T2, T1> reverse(Tuple2<T1, T2> tuple) {
+        return Tuples.of(tuple.getT2(), tuple.getT1());
+    }
+
+    /**
+     * Reverses a {@link Tuple3}
+     *
+     * @param tuple the tuple to reverse
+     * @param <T1>  the type of the first value
+     * @param <T2>  the type of the second value
+     * @param <T3>  the type of the third value
+     * @return the reversed tuple
+     */
+    public static <T1, T2, T3> Tuple3<T3, T2, T1> reverse(Tuple3<T1, T2, T3> tuple) {
+        return Tuples.of(tuple.getT3(), tuple.getT2(), tuple.getT1());
+    }
+
+    /**
+     * Reverses a {@link Tuple4}
+     *
+     * @param tuple the tuple to reverse
+     * @param <T1>  the type of the first value
+     * @param <T2>  the type of the second value
+     * @param <T3>  the type of the third value
+     * @param <T4>  the type of the fourth value
+     * @return the reversed tuple
+     */
+    public static <T1, T2, T3, T4> Tuple4<T4, T3, T2, T1> reverse(Tuple4<T1, T2, T3, T4> tuple) {
+        return Tuples.of(tuple.getT4(), tuple.getT3(), tuple.getT2(), tuple.getT1());
+    }
+
+    /**
+     * Reverses a {@link Tuple5}
+     *
+     * @param tuple the tuple to reverse
+     * @param <T1>  the type of the first value
+     * @param <T2>  the type of the second value
+     * @param <T3>  the type of the third value
+     * @param <T4>  the type of the fourth value
+     * @param <T5>  the type of the fifth value
+     * @return the reversed tuple
+     */
+    public static <T1, T2, T3, T4, T5> Tuple5<T5, T4, T3, T2, T1> reverse(Tuple5<T1, T2, T3, T4, T5> tuple) {
+        return Tuples.of(tuple.getT5(), tuple.getT4(), tuple.getT3(), tuple.getT2(), tuple.getT1());
+    }
+
+    /**
+     * Reverses a {@link Tuple6}
+     *
+     * @param tuple the tuple to reverse
+     * @param <T1>  the type of the first value
+     * @param <T2>  the type of the second value
+     * @param <T3>  the type of the third value
+     * @param <T4>  the type of the fourth value
+     * @param <T5>  the type of the fifth value
+     * @param <T6>  the type of the sixth value
+     * @return the reversed tuple
+     */
+    public static <T1, T2, T3, T4, T5, T6> Tuple6<T6, T5, T4, T3, T2, T1> reverse(Tuple6<T1, T2, T3, T4, T5, T6> tuple) {
+        return Tuples.of(tuple.getT6(), tuple.getT5(), tuple.getT4(), tuple.getT3(), tuple.getT2(), tuple.getT1());
+    }
+
+    /**
+     * Reverses a {@link Tuple7}
+     *
+     * @param tuple the tuple to reverse
+     * @param <T1>  the type of the first value
+     * @param <T2>  the type of the second value
+     * @param <T3>  the type of the third value
+     * @param <T4>  the type of the fourth value
+     * @param <T5>  the type of the fifth value
+     * @param <T6>  the type of the sixth value
+     * @param <T7>  the type of the seventh value
+     * @return the reversed tuple
+     */
+    public static <T1, T2, T3, T4, T5, T6, T7> Tuple7<T7, T6, T5, T4, T3, T2, T1> reverse(Tuple7<T1, T2, T3, T4, T5, T6, T7> tuple) {
+        return Tuples.of(tuple.getT7(), tuple.getT6(), tuple.getT5(), tuple.getT4(), tuple.getT3(), tuple.getT2(), tuple.getT1());
+    }
+
+    /**
+     * Reverses a {@link Tuple8}
+     *
+     * @param tuple the tuple to reverse
+     * @param <T1>  the type of the first value
+     * @param <T2>  the type of the second value
+     * @param <T3>  the type of the third value
+     * @param <T4>  the type of the fourth value
+     * @param <T5>  the type of the fifth value
+     * @param <T6>  the type of the sixth value
+     * @param <T7>  the type of the seventh value
+     * @param <T8>  the type of the eighth value
+     * @return the reversed tuple
+     */
+    public static <T1, T2, T3, T4, T5, T6, T7, T8> Tuple8<T8, T7, T6, T5, T4, T3, T2, T1> reverse(Tuple8<T1, T2, T3, T4, T5, T6, T7, T8> tuple) {
+        return Tuples.of(tuple.getT8(), tuple.getT7(), tuple.getT6(), tuple.getT5(), tuple.getT4(), tuple.getT3(), tuple.getT2(), tuple.getT1());
+    }
+
 }
